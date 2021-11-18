@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+#kv{
+    height: 91.5rem;
+}
+
+#kv .wrap{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+#kv .wrap .kv_txt{
+    height: 100%;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+
+#kv .wrap .kv_txt h3{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+#kv .wrap .kv_txt h2{
+    font-size: 7rem;
+    line-height: 2;
+    z-index: 10;
+}
+
+#kv .wrap .kv_txt h2 span{
+    position: relative;
+    display: inline-block;
+    height: 11.5rem;
+}
+
+#kv .wrap .kv_txt h2 span::before{
+    position: absolute;
+    content: "";
+    height: 2.6rem;
+    width: 100%;
+    bottom: 0;
+    background: #FDF369;
+    z-index: -1;
+    bottom: 0;
+}
+
+#kv .wrap .kv_txt p{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-top: 7rem;
+    position: relative;
+    margin-bottom: 3.5rem;
+}
+
+#kv .wrap .kv_txt p::before{
+    position: absolute;
+    content: "";
+    height: 3.1rem;
+    width: 4rem;
+    bottom: 0;
+    left: -4rem;
+    background: url("../img/appeal_left.svg") no-repeat center center/contain;
+}
+
+#kv .wrap .kv_txt p::after{
+    position: absolute;
+    content: "";
+    height: 3.1rem;
+    width: 4rem;
+    bottom: 0;
+    right: -4.5rem;
+    background: url("../img/appeal_right.svg") no-repeat center center/contain;
+}
+
+#kv .wrap .kv_txt div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#kv .wrap .kv_txt div a{
+    font-size: 2.4rem;
+    color: white;
+    font-weight: bold;
+    padding: 2.5rem 3.7rem;
+    border-radius: 1.3rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+}
+
+#kv .wrap .kv_txt div a:first-child{
+    background: #03CDD5;
+}
+
+#kv .wrap .kv_txt div a:nth-child(2){
+    background: #034FD5;
+    margin-left: .9rem;
+}
+
+/* feature */
+
+#feature{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5.5rem 0 6rem;
+}
+
+#feature h2, #example h2, #achievement h2, #comparison h2, #price h2, #flow h2, #faq h2{
+    font-size: 4rem;
+    color: #03CDD5;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+}
+
+
+#feature h2::before, #example h2::before, #achievement h2::before, #comparison h2::before, #price h2::before, #flow h2::before, #faq h2::before{
+    position: absolute;
+    content: "";
+    width: 37.108rem;
+    height: 2.13rem;
+    bottom: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../img/title_under.svg") no-repeat center center/contain;
+}
+
+#feature h2 img, #example h2 img, #achievement h2 img, #comparison h2 img, #price h2 img, #flow h2 img{
+    width: 15.565rem;
+    margin-right: .68rem;
+    transform: translateY(1rem);
+}
+
+#feature h2 small, #example h2 small, #achievement h2 small, #comparison h2 small, #price h2 small, #flow h2 small, #faq h2 small{
+    font-size: 1.6rem;
+}
+
+#feature > p, #example .wrap > p, #achievement > p, #comparison .wrap > p, #price > p, #flow .wrap > p{
+    margin-top: 6rem;
+    width: 66.7%;
+    line-height: 2;
+    z-index: 10;
+    margin-bottom: 5.5rem;
+}
+
+#feature p span, #example p span{
+    font-weight: bold;
+    display: inline-block;
+    height: 3.5rem;
+    position: relative;
+}
+
+#feature p span::before, #example p span::before{
+    position: absolute;
+    content: "";
+    height: 1.1rem;
+    width: 100%;
+    bottom: 0;
+    background: #FDF369;
+    z-index: -1;
+}
+
+#feature .feature_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 4.6rem;
+}
+
+#feature .feature_list div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: .3rem solid #03CDD5;
+    width: calc(32% - 7rem);
+    padding: 2.5rem 3.5rem;
+}
+
+#feature .feature_list div h3{
+    font-size: 4rem;
+    color: #03CDD5;
+    margin-bottom: .5rem;
+}
+
+#feature .feature_list div img{
+    width: 100%;
+    margin-bottom: 2.2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+}
+
+#feature .feature_list div p{
+    font-size: 1.6rem;
+}
+
+/* example */
+#example{
+    background: #F1FDFF;
+    padding: 5.5rem 0 6rem;
+}
+
+#example .wrap{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#example .wrap > p{
+    margin-bottom: 3.36rem;
+}
+
+#example .wrap > img{
+    width: 66.7%;
+    margin-bottom: 4.27rem;
+}
+
+/* achievement */
+#achievement{
+    padding: 5.5rem 0 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#achievement > p{
+    text-align: center;
+    margin-bottom: 5.15rem;
+}
+
+.achievement_list{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 75%;
+    margin-bottom: 4.5rem;
+}
+
+.achievement_list div{
+    width: 50%;
+}
+
+.achievement_list div h3{
+    font-size: 2.4rem;
+    padding: 1.6rem 0;
+    width: 31.7rem;
+    text-align: center;
+    background: #03CDD5;
+    color: white;
+    display: inline-block;
+    margin-bottom: 1.22rem;
+}
+
+.achievement_list div img{
+    width: 75.5rem;
+}
+
+.achievement_list div:first-child img{
+    transform: translateX(-4rem);
+}
+
+/* comparison */
+#comparison{
+    background: #F1FDFF;
+    padding: 5.5rem 0 6rem;
+}
+
+#comparison .wrap{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#comparison .wrap p{
+    text-align: center;
+    margin-bottom: 6.32rem;
+}
+
+#comparison .wrap > img{
+    width: 137.3rem;
+}
+
+/* price */
+#price{
+    width: 75%;
+    padding: 5.5rem 0 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+#price > p{
+    margin-bottom: 5rem;
+}
+
+/* flow */
+#flow{
+    padding: 5.5rem 0 6rem;
+    background: #F1FDFF;
+}
+
+#flow .wrap{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#flow .wrap > p{
+    text-align: center;
+    margin-bottom: 5.48rem;
+}
+
+#flow .wrap .flow_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 6.5rem;
+}
+
+#flow .wrap .flow_list div{
+    width: 40rem;
+    position: relative;
+    z-index: 10;
+}
+
+#flow .wrap .flow_list div::before{
+    position: absolute;
+    content: "";
+    width: 50rem;
+    height: 48.898rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-47%, -50%);
+    background: url("../img/flow_list_bg.svg") no-repeat center center/contain;
+    z-index: -1;
+}
+
+#flow .wrap .flow_list div:last-child::before{
+    height: 45.5rem;
+    transform: translate(-50%, -50%);
+    background: url("../img/flow_list_bg_last.svg") no-repeat center center/contain;
+}
+
+#flow .wrap .flow_list div h4{
+    font-size: 4rem;
+    color: #03CDD5;
+    margin-bottom: 1rem;
+}
+
+#flow .wrap .flow_list div img{
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+    margin-bottom: 3.24rem;
+}
+
+#flow .wrap .flow_list div h3{
+    font-size: 1.8rem;
+    color: #03CDD5;
+    margin-bottom: 1.5rem;
+}
+
+#flow .wrap .flow_list div p{
+    font-size: 1.6rem;
+}
+
+/* faq */
+#faq{
+    padding: 5.5rem 0 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#faq .content{
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+    width: 53.68%;
+}
+
+#faq .content:nth-child(2){
+    margin-top: 7rem;
+}
+
+#faq .content:last-child{
+    margin-bottom: 0;
+}
+
+#faq .content h4{
+    font-size: 4rem;
+    color: white;
+    margin-left: 7.2rem;
+}
+
+#faq .content h3{
+    font-size: 2.4rem;
+    color: white;
+    margin-left: 2.18rem;
+}
+
+#faq .content .question{
+    background: #03CDD5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+#faq .content .answer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+#faq .content .answer h4{
+    color: #03CDD5;
+}
+
+#faq .content .answer p{
+    margin-left: 2.38rem;
+}
