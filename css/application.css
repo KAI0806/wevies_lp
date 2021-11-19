@@ -49,6 +49,9 @@ p{
 
 header{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
 }
 
 header .wrap{
@@ -116,4 +119,117 @@ header .wrap .right a:nth-child(2){
 .cta a:nth-child(2){
     background: #034FD5;
     margin-left: 3.3rem;
+}
+
+main{
+    overflow-x: hidden;
+    padding-top: 10rem;
+}
+
+footer{
+    background: #787878;
+    color: white;
+}
+
+footer a{
+    color: white;
+    font-size: 2rem;
+    padding-right: 3rem;
+    margin-right: 3rem;
+    border-right: .1rem solid white;
+}
+
+footer a:last-child{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+footer .wrap{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.8rem 0;
+}
+
+footer .wrap h3{
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+}
+
+footer .wrap h2{
+    font-size: 2.8rem;
+    margin-bottom: .5rem;
+}
+
+footer .wrap p{
+    color: white;
+}
+
+@media screen and (max-width: 767px){
+    html{
+        font-size: 2.667vw;
+    }
+
+    p{
+        font-size: 1.6rem;
+    }
+
+    .pc_only{
+        display: none !important;
+    }
+    
+    .sp_only{
+        display: block;
+    }
+
+    .pc_flex{
+        display: none !important;
+    }
+
+    .sp_flex{
+        display: flex !important;
+    }
+
+    .pc_inline{
+        display: none;
+    }
+
+    .sp_inline{
+        display: inline;
+    }
+
+    header{
+        background: white;
+    }
+
+    header .wrap{
+        justify-content: center;
+        padding: 1.2rem 0;
+    }
+
+    header .wrap .left img{
+        width: 14.268rem;
+    }
+
+    main{
+        padding-top: 9rem;
+    }
+
+    .cta{
+        flex-direction: column;
+    }
+
+
+    .cta a:nth-child(2){
+        margin-left: 0;
+        margin-top: 1.22rem;
+    }
+
+    .cta a{
+        font-size: 2rem;
+        padding: 1.5rem 5.27rem;
+    }
 }

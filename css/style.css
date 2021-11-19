@@ -2,6 +2,7 @@
 
 #kv{
     height: 91.5rem;
+    position: relative;
 }
 
 #kv .wrap{
@@ -98,6 +99,42 @@
 #kv .wrap .kv_txt div a:nth-child(2){
     background: #034FD5;
     margin-left: .9rem;
+}
+
+#kv .wrap .pc_slide{
+    position: absolute;
+    width: 132.143rem;
+    height: 78.601rem;
+    top: 7.7rem;
+    right: -31rem;
+    background: url("../img/pc_bg.png") no-repeat center center/contain;
+}
+
+#kv .wrap .pc_slide .slider .slide{
+    position: absolute;
+    width: 96.5rem;
+    height: 60rem;
+    top: 3.5rem;
+    left: 18.5rem;
+    background: url("../img/pc001.jpg") no-repeat left top/cover;
+}
+
+#kv .wrap .sp_slide{
+    position: absolute;
+    width: 34.328rem;
+    height: 50.432rem;
+    top: 37rem;
+    right: 75rem;
+    background: url("../img/sp_bg.png") no-repeat center center/contain;
+}
+
+#kv .wrap .sp_slide .slider .slide{
+    position: absolute;
+    width: 21rem;
+    height: 42rem;
+    top: 3.8rem;
+    left: 6.8rem;
+    background: url("../img/sp001.jpg") no-repeat center top/cover;
 }
 
 /* feature */
@@ -439,4 +476,262 @@
 
 #faq .content .answer p{
     margin-left: 2.38rem;
+}
+
+@media screen and (max-width: 767px){
+    #kv{
+        height: 70rem;
+    }
+
+    #kv .wrap .kv_txt{
+        margin-left: 0;
+        margin: auto;
+        justify-content: flex-start;
+    }
+
+    #kv .wrap .kv_txt h3{
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+    }
+
+    #kv .wrap .kv_txt h2{
+        font-size: 3.7rem;
+        line-height: 1.8;
+    }
+
+    #kv .wrap .kv_txt h2 span{
+        height: 6rem;
+    }
+
+    #kv .wrap .kv_txt h2 span::before{
+        height: 1.4rem;
+    }
+
+    #kv .wrap .kv_txt p{
+        font-size: 2rem;
+        margin-top: 32rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #kv .wrap .kv_txt p::before{
+        width: 3.348rem;
+        height: 2.595rem;
+        left: -3.5rem;
+        bottom: .3rem;
+    }
+
+    #kv .wrap .kv_txt p::after{
+        width: 3.348rem;
+        height: 2.45rem;
+        right: -3.8rem;
+        bottom: .4rem;
+    }
+
+    #kv .wrap .kv_txt div{
+        flex-direction: column;
+    }
+
+    #kv .wrap .kv_txt div a{
+        font-size: 2rem;
+        padding: 1.5rem 5.27rem;
+    }
+
+    #kv .wrap .kv_txt div a:nth-child(2){
+        margin-left: 0;
+        margin-top: 1.22rem;
+    }
+
+    /* feature */
+
+    #feature{
+        padding: 3.68rem 0 3rem;
+        width: 85%;
+    }
+
+    #feature h2, #example h2, #achievement h2, #comparison h2, #price h2, #flow h2, #faq h2{
+        font-size: 2.8rem;
+    }
+
+    #feature h2 img, #example h2 img, #achievement h2 img, #comparison h2 img, #price h2 img, #flow h2 img{
+        width: 11.185rem;
+        margin-right: .6rem;
+        transform: translateY(.7rem);
+    }
+
+    #feature h2 small, #example h2 small, #achievement h2 small, #comparison h2 small, #price h2 small, #flow h2 small, #faq h2 small{
+        font-size: 1.2rem;
+    }
+
+    #feature h2::before, #example h2::before, #achievement h2::before, #comparison h2::before, #price h2::before, #flow h2::before, #faq h2::before{
+        width: 26.667rem;
+        height: .812rem;
+        bottom: -2rem;
+    }
+
+    #feature > p, #example .wrap > p, #achievement > p, #comparison .wrap > p, #price > p, #flow .wrap > p{
+        margin-top: 3rem;
+        width: 100%;
+        margin-bottom: 3.88rem;
+        text-align: left;
+    }
+
+    #feature p span, #example p span{
+        height: 2.8rem;
+    }
+
+    #feature p span::before, #example p span::before{
+        height: .8rem;
+    }
+
+    #feature .feature_list{
+        flex-direction: column;
+        margin-bottom: 2.36rem;
+    }
+
+    #feature .feature_list div{
+        width: calc(100% - .6rem);
+        padding: 1.5rem 0;
+        margin-bottom: 3rem;
+    }
+
+    #feature .feature_list div:last-child{
+        margin-bottom: 0;
+    }
+
+    #feature .feature_list div h3{
+        font-size: 2.6rem;
+    }
+
+    #feature .feature_list div img{
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+
+    #feature .feature_list div p{
+        font-size: 1.2rem;
+    }
+
+    /* example */
+
+    #example{
+        padding: 3.68rem 0 3rem;
+    }
+
+    #example .wrap{
+        width: 85%;
+    }
+
+    #example .wrap > p{
+        margin-bottom: 1.6rem;
+    }
+
+    #example .wrap > img{
+        width: 100%;
+        margin-bottom: 2.1rem;
+    }
+
+    /* achievement */
+    #achievement{
+        padding: 3.68rem 0 3rem;
+        width: 85%;
+        margin: auto;
+    }
+
+    .achievement_list{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2.35rem;
+    }
+
+    .achievement_list div{
+        width: 100%;
+    }
+
+    .achievement_list div h3{
+        font-size: 2rem;
+        padding: 1rem 0 1rem 1.62rem;
+        text-align: left;
+        width: calc(100% - 1.62rem);
+    }
+
+    .achievement_list div:first-child img{
+        transform: unset;
+    }
+
+    .achievement_list div img{
+        width: 100%;
+    }
+
+    /* comparison */
+    #comparison{
+        padding:  3.68rem 0 3rem;
+    }
+
+    #comparison .wrap{
+        width: 85%;
+    }
+
+    #comparison .wrap > p{
+        margin-bottom: 2rem;
+    }
+
+    #comparison .wrap > img{
+        width: 100%;
+    }
+
+    /* price */
+    #price{
+        padding:  3.68rem 0 3rem;
+    }
+
+    /* flow */
+    #flow{
+        padding:  3.68rem 0 3rem;
+    }
+
+    #flow .wrap .flow_list{
+        flex-direction: column;
+    }
+
+    #flow .wrap .flow_list div{
+        width: 100%;
+        padding: 1.6rem 0;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #flow .wrap .flow_list div::before{
+        width: 31.9rem;
+        height: 35.659rem;
+        transform: translate(-50%, -45%);
+        background: url("../img/flow_list_bg_sp.svg") no-repeat center center/contain;
+    }
+
+    #flow .wrap .flow_list div h4{
+        font-size: 2.6rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    #flow .wrap .flow_list div img{
+        width: 100%;
+        margin-bottom: 1.53rem;
+    }
+
+    #flow .wrap .flow_list div h3{
+        font-size: 1.6rem;
+        margin-bottom: 1.44rem;
+    }
+
+    #flow .wrap .flow_list div p{
+        font-size: 1.4rem;
+    }
+
+    #flow .wrap .flow_list div:last-child::before{
+        height: 31.9rem;
+        background: url("../img/flow_list_bg_last_sp.svg") no-repeat center center/contain;
+    }
 }
