@@ -691,6 +691,7 @@
 
     #flow .wrap .flow_list{
         flex-direction: column;
+        margin-bottom: 2.25rem;
     }
 
     #flow .wrap .flow_list div{
@@ -701,6 +702,10 @@
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    #flow .wrap .flow_list div:last-child{
+        margin-bottom: 0;
     }
 
     #flow .wrap .flow_list div::before{
