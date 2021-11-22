@@ -232,4 +232,41 @@ footer .wrap p{
         font-size: 2rem;
         padding: 1.5rem 5.27rem;
     }
+
+    footer .wrap{
+        padding: 2.8rem 0 2rem;
+        flex-direction: column;
+    }
+
+    footer .wrap .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .wrap .left h3{
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+
+    footer .wrap .left h2{
+        font-size: 3.1rem;
+        margin-bottom: 4rem;
+    }
+
+    footer .wrap .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .wrap .right a{
+        margin: 0;
+        padding: 0;
+        border-right: none;
+        font-size: 1.6rem;
+        margin-bottom: 2.2rem;
+    }
 }
