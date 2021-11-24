@@ -344,6 +344,219 @@
 
 #price > p{
     margin-bottom: 5rem;
+    text-align: center;
+}
+
+#price .table{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    border: .3rem solid #03CDD5;
+    border-radius: 1.3rem;
+    margin-bottom: 5.5rem;
+}
+
+#price .table > div{
+    width: 33.4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#price .table > div > h3{
+    font-size: 4rem;
+    color: #03CDD5;
+    text-align: center;
+    padding: 2.5rem 0;
+    line-height: 1;
+    width: 100%;
+    border-bottom: .3rem solid #03CDD5;
+}
+
+#price .table .basic h3{
+    border-radius: 0 0 0 1.3rem;
+}
+
+#price .table .premium h3{
+    border-radius: 0 0 1.3rem 0;
+}
+
+#price .table > div > h4{
+    font-size: 1.8rem;
+    padding: 2.5rem 0;
+    border-bottom: .3rem solid #03CDD5;
+    text-align: center;
+    width: 100%;
+}
+
+#price .table .page_price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#price .table .page_price div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.75rem 0;
+}
+
+#price .table .page_price h4{
+    font-size: 2rem;
+    padding: 1rem 0;
+    width: 70%;
+    background: #03CDD5;
+    color: white;
+    text-align: center;
+}
+
+#price .table .page_price p{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+#price .table .page_price p small{
+    font-size: 1.5rem;
+}
+
+#price .table .must{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #03CDD5;
+    width: 100%;
+    padding: 2.5rem 0;
+}
+
+#price .table .must ul{
+    list-style: none;
+}
+
+#price .table .must ul li, #price .table .case ul li{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 2.55rem;
+    position: relative;
+}
+
+#price .table .must ul li:last-child, #price .table .case ul li:last-child{
+    margin-bottom: 0;
+}
+
+#price .table .must ul li::before, #price .table .case ul li::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -3rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    transform: translateY(-50%);
+    background: url("../img/check.svg") no-repeat center center/contain;
+}
+
+#price .table .case{
+    background: #C5FDFF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.75rem 0;
+}
+
+#price .table .case h4{
+    font-size: 2.4rem;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 2rem;
+}
+
+#price .table .case h4::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: .9rem;
+    bottom: .5rem;
+    background: #FDF369;
+    z-index: -1;
+}
+
+#price .table .case div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#price .table .case ul{
+    list-style: none;
+}
+
+#price .table .bash{
+    color: #E4E4E4;
+}
+
+#price .table .campaign{
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#price .table .campaign h4{
+    font-size: 2.8rem;
+}
+
+#price .table .campaign h4 span{
+    position: relative;
+}
+
+#price .table .campaign h4 span::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/doubleline.svg")no-repeat center center/cover;
+}
+
+#price .table .campaign img{
+    width: 1.857rem;
+    margin: 1.25rem 0 .5rem;
+}
+
+#price .table .campaign h3{
+    font-size: 2.4rem;
+}
+
+#price .table .campaign h3 span{
+    display: inline-block;
+    font-size: 3.2rem;
+    position: relative;
+    z-index: 10;
+    height: 4rem;
+}
+
+#price .table .campaign h3 span::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: .9rem;
+    bottom: 0;
+    background: #FDF369;
+    z-index: -1;
+}
+
+#price .table .standard{
+    border: 1rem solid #FDF369;
 }
 
 /* flow */
