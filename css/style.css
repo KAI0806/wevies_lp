@@ -92,6 +92,10 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
 }
 
+#kv .wrap .kv_txt div a:hover{
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 60%);
+}
+
 #kv .wrap .kv_txt div a:first-child{
     background: #03CDD5;
 }
