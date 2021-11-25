@@ -17,12 +17,12 @@
         <div class="wrap">
             <div class="left">
                 <h1 class="pc_only">WEBサイト制作サービス｜求人広告効果を高めるWEBサイト制作を行います。Wevies（ウェビーズ）</h1>
-                <img src="img/header_logo_pc.svg" alt="Wevies（ウェビーズ）">
+                <a href="index.html"><img src="img/header_logo_pc.svg" alt="Wevies（ウェビーズ）"></a>
             </div>
 
             <div class="right pc_only">
-                <a href="">無料相談はこちら</a>
-                <a href="">資料ダウンロード</a>
+                <a href="contact/">無料相談はこちら</a>
+                <a href="download/">資料ダウンロード</a>
             </div>
         </div>
     </header>
@@ -39,24 +39,24 @@
                     <p>今なら初期費用無料</p>
 
                     <div>
-                        <a href="">無料相談はこちら</a>
-                        <a href="">資料ダウンロード</a>
+                        <a href="contact/">無料相談はこちら</a>
+                        <a href="download/">資料ダウンロード</a>
                     </div>
                 </div>
 
-                <div class="pc_slide pc_only">
+                <div class="pc_slide">
                     <div class="slider">
-                        <div class="slide">
-
-                        </div>
+                        <div class="slide slide01"></div>
+                        <div class="slide slide02"></div>
+                        <div class="slide slide03"></div>
                     </div>
                 </div>
 
-                <div class="sp_slide pc_only">
+                <div class="sp_slide">
                     <div class="slider">
-                        <div class="slide">
-
-                        </div>
+                        <div class="slide slide01"></div>
+                        <div class="slide slide02"></div>
+                        <div class="slide slide03"></div>
                     </div>
                 </div>
             </div>
@@ -89,8 +89,8 @@
             </div>
 
             <div class="cta">
-                <a href="">無料相談はこちら</a>
-                <a href="">資料ダウンロード</a>
+                <a href="contact/">無料相談はこちら</a>
+                <a href="download/">資料ダウンロード</a>
             </div>
         </section>
 
@@ -107,8 +107,8 @@
                 <img class="sp_only" src="img/example_sp.svg" alt="対応事例">
 
                 <div class="cta">
-                    <a href="">無料相談はこちら</a>
-                    <a href="">資料ダウンロード</a>
+                    <a href="contact/">無料相談はこちら</a>
+                    <a href="download/">資料ダウンロード</a>
                 </div>
             </div>
         </section>
@@ -133,8 +133,8 @@
             </div>
 
             <div class="cta">
-                <a href="">無料相談はこちら</a>
-                <a href="">資料ダウンロード</a>
+                <a href="contact/">無料相談はこちら</a>
+                <a href="download/">資料ダウンロード</a>
             </div>
         </section>
 
@@ -457,8 +457,8 @@
             </div>
             
             <div class="cta">
-                <a href="">無料相談はこちら</a>
-                <a href="">資料ダウンロード</a>
+                <a href="contact/">無料相談はこちら</a>
+                <a href="download/">資料ダウンロード</a>
             </div>
         </section>
 
@@ -495,8 +495,8 @@
                 </div>
 
                 <div class="cta">
-                    <a href="">無料相談はこちら</a>
-                    <a href="">資料ダウンロード</a>
+                    <a href="contact/">無料相談はこちら</a>
+                    <a href="download/">資料ダウンロード</a>
                 </div>
             </div>
         </section>
@@ -552,7 +552,7 @@
             <div class="right">
                 <a href="">プライバシーポリシー</a>
                 <a href="">利用規約</a>
-                <a href="">運営会社</a>
+                <a href="https://reglos.net/" target="_blank" rel="noopener noreferrer">運営会社</a>
             </div>
             <p class="copylight sp_only">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Reglos Co., Ltd</p>
         </div>
@@ -561,7 +561,11 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/price.js"></script>
     <script>
-        $('.slider').slick();
+        $('.slider').slick({
+            autoplay: true,
+            arrows: false,
+            autoplaySpeed: 4500
+        });
     </script>
 </body>
 </html>

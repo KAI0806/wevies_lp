@@ -101,6 +101,17 @@
     margin-left: .9rem;
 }
 
+
+.pc_slide .slick-slider{
+    transform: translate(18rem, 3.9rem);
+}
+
+.sp_slide .slick-slider{
+    width: 21rem;
+    height: 42rem;
+    transform: translate(6.5rem, 3.8rem);
+}
+
 #kv .wrap .pc_slide{
     position: absolute;
     width: 132.143rem;
@@ -111,12 +122,23 @@
 }
 
 #kv .wrap .pc_slide .slider .slide{
-    position: absolute;
+    /* position: absolute; */
     width: 96.5rem;
     height: 60rem;
-    top: 3.5rem;
-    left: 18.5rem;
+    /* top: 3.5rem;
+    left: 18.5rem; */
+}
+
+#kv .wrap .pc_slide .slider .slide01{
     background: url("../img/pc001.jpg") no-repeat left top/cover;
+}
+
+#kv .wrap .pc_slide .slider .slide02{
+    background: url("../img/pc002.jpg") no-repeat left top/cover;
+}
+
+#kv .wrap .pc_slide .slider .slide03{
+    background: url("../img/pc003.jpg") no-repeat left top/cover;
 }
 
 #kv .wrap .sp_slide{
@@ -129,13 +151,22 @@
 }
 
 #kv .wrap .sp_slide .slider .slide{
-    position: absolute;
     width: 21rem;
     height: 42rem;
-    top: 3.8rem;
-    left: 6.8rem;
+}
+
+#kv .wrap .sp_slide .slider .slide01{
     background: url("../img/sp001.jpg") no-repeat center top/cover;
 }
+
+#kv .wrap .sp_slide .slider .slide02{
+    background: url("../img/sp002.jpg") no-repeat center top/cover;
+}
+
+#kv .wrap .sp_slide .slider .slide03{
+    background: url("../img/sp003.jpg") no-repeat center top/cover;
+}
+
 
 /* feature */
 
@@ -752,6 +783,41 @@
     #kv .wrap .kv_txt div a:nth-child(2){
         margin-left: 0;
         margin-top: 1.22rem;
+    }
+
+    #kv .wrap .pc_slide{
+        width: 39rem;
+        height: 23.198rem;
+        top: 17.7rem;
+        right: -11rem;
+    }
+
+    #kv .wrap .pc_slide .slider .slide{
+        width: 28.667rem;
+        height: 18.005rem;
+    }
+
+    #kv .wrap .sp_slide .slider .slide{
+        width: 9.516rem;
+        height: 19.088rem;
+    }
+
+    #kv .wrap .sp_slide{
+        width: 15.619rem;
+        height: 22.946rem;
+        top: 20rem;
+        right: unset;
+        left: 3rem;
+    }
+
+    .pc_slide .slick-slider{
+        transform: translate(5.5rem, 1rem);
+    }
+
+    .sp_slide .slick-slider{
+        width: 9.516rem;
+        height: 19.088rem;
+        transform: translate(3.1rem, 1.7rem);
     }
 
     /* feature */
