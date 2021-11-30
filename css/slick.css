@@ -87,9 +87,15 @@
 {
     float: right;
 }
-.slick-slide img
+.pc_slide .slick-slide img
 {
     display: block;
+    height: 100%;
+}
+.sp_slide .slick-slide img
+{
+    display: block;
+    width: 100%;
 }
 .slick-slide.slick-loading img
 {

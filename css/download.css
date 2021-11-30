@@ -29,7 +29,7 @@
     width: 50%;
 }
 
-#download .wrap .left > img{
+#download .wrap .left > picture > img{
     width: 90%;
     margin-bottom: 2rem;
 }
@@ -40,13 +40,14 @@
 
 #download .wrap .left div{
     width: 90%;
+    gap: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #download .wrap .left div img{
-    width: 45%;
+    width: 100%;
 }
 
 #download .wrap .right h3{
@@ -197,7 +198,7 @@ textarea{
         width: 100%;
     }
 
-    #download .wrap .left > img{
+    #download .wrap .left > picture > img{
         width: 100%;
     }
 

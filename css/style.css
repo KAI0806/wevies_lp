@@ -107,13 +107,12 @@
 
 
 .pc_slide .slick-slider{
-    transform: translate(18rem, 3.9rem);
+    transform: translatey(3.9rem);
 }
 
 .sp_slide .slick-slider{
-    width: 21rem;
     height: 42rem;
-    transform: translate(6.5rem, 3.8rem);
+    transform: translateY(3.8rem);
 }
 
 #kv .wrap .pc_slide{
@@ -122,27 +121,16 @@
     height: 78.601rem;
     top: 7.7rem;
     right: -31rem;
+    padding: 0 18rem;
+    box-sizing: border-box;
     background: url("../img/pc_bg.png") no-repeat center center/contain;
 }
 
 #kv .wrap .pc_slide .slider .slide{
     /* position: absolute; */
-    width: 96.5rem;
     height: 60rem;
     /* top: 3.5rem;
     left: 18.5rem; */
-}
-
-#kv .wrap .pc_slide .slider .slide01{
-    background: url("../img/pc001.jpg") no-repeat left top/cover;
-}
-
-#kv .wrap .pc_slide .slider .slide02{
-    background: url("../img/pc002.jpg") no-repeat left top/cover;
-}
-
-#kv .wrap .pc_slide .slider .slide03{
-    background: url("../img/pc003.jpg") no-repeat left top/cover;
 }
 
 #kv .wrap .sp_slide{
@@ -151,24 +139,21 @@
     height: 50.432rem;
     top: 37rem;
     right: 75rem;
+    padding: 0px 6.5rem;
+    box-sizing: border-box;
     background: url("../img/sp_bg.png") no-repeat center center/contain;
 }
 
 #kv .wrap .sp_slide .slider .slide{
-    width: 21rem;
     height: 42rem;
 }
 
-#kv .wrap .sp_slide .slider .slide01{
-    background: url("../img/sp001.jpg") no-repeat center top/cover;
-}
-
-#kv .wrap .sp_slide .slider .slide02{
-    background: url("../img/sp002.jpg") no-repeat center top/cover;
-}
-
-#kv .wrap .sp_slide .slider .slide03{
-    background: url("../img/sp003.jpg") no-repeat center top/cover;
+#kv .wrap .sp_slide .slider picture,
+#kv .wrap .pc_slide .slider picture
+{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -263,10 +248,15 @@
     margin-bottom: .5rem;
 }
 
-#feature .feature_list div img{
+#feature .feature_list div picture{
     width: 100%;
     margin-bottom: 2.2rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+}
+
+#feature .feature_list div img{
+    width: 100%;
+    vertical-align: bottom;
 }
 
 #feature .feature_list div p{
@@ -654,8 +644,13 @@
 
 #flow .wrap .flow_list div img{
     width: 100%;
+    vertical-align: bottom;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
     margin-bottom: 3.24rem;
+}
+
+#flow .wrap .flow_list div picture{
+    width: 100%;
 }
 
 #flow .wrap .flow_list div h3{
@@ -792,17 +787,16 @@
     #kv .wrap .pc_slide{
         width: 39rem;
         height: 23.198rem;
+        padding: 0 5.5rem;
         top: 17.7rem;
         right: -11rem;
     }
 
     #kv .wrap .pc_slide .slider .slide{
-        width: 28.667rem;
         height: 18.005rem;
     }
 
     #kv .wrap .sp_slide .slider .slide{
-        width: 9.516rem;
         height: 19.088rem;
     }
 
@@ -812,16 +806,16 @@
         top: 20rem;
         right: unset;
         left: 3rem;
+        padding: 0px 2.9rem;
     }
 
     .pc_slide .slick-slider{
-        transform: translate(5.5rem, 1rem);
+        transform: translateY(1rem);
     }
 
     .sp_slide .slick-slider{
-        width: 9.516rem;
         height: 19.088rem;
-        transform: translate(3.1rem, 1.7rem);
+        transform: translateY(1.7rem);
     }
 
     /* feature */
@@ -885,7 +879,7 @@
         font-size: 2.6rem;
     }
 
-    #feature .feature_list div img{
+    #feature .feature_list div picture{
         margin-bottom: 2rem;
         width: 80%;
     }
@@ -1240,17 +1234,18 @@
     }
 
     #flow .wrap .flow_list div img{
-        width: 100%;
         margin-bottom: 1.53rem;
     }
 
     #flow .wrap .flow_list div h3{
         font-size: 1.6rem;
         margin-bottom: 1.44rem;
+        line-height: 1.5em;
     }
 
     #flow .wrap .flow_list div p{
         font-size: 1.4rem;
+        line-height: 1.5em;
     }
 
     #flow .wrap .flow_list div:last-child::before{
