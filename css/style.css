@@ -287,6 +287,104 @@
     margin-bottom: 4.27rem;
 }
 
+#example .wrap .content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4.27rem;
+}
+
+#example .wrap .content .top{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 66.7%;
+}
+
+#example .wrap .content .top > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    border: .2rem solid #03CDD5;
+    padding: 3.2rem 0 2.24rem;
+    background: white;
+}
+
+#example .wrap .content .top > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#example .wrap .content .top h3{
+    color: #03CDD5;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#example .wrap .content .top img{
+    width: 18.282rem;
+}
+
+#example .wrap .content .top ul li{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#example .wrap .content .top ul p{
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+#example .wrap .content .bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(66.7% - .4rem);
+    border: .2rem solid #03CDD5;
+    padding: 5.5rem 0;
+    background: white;
+    position: relative;
+    z-index: 10;
+}
+
+#example .wrap .content .bottom::before{
+    position: absolute;
+    content: "";
+    width: 4.816rem;
+    height: 7.705rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -70%);
+    background: url("../img/iphone.svg") no-repeat center center/contain;
+    z-index: -1;
+}
+
+#example .wrap .content .bottom::after{
+    position: absolute;
+    content: "";
+    width: 7.812rem;
+    height: 5.208rem;
+    top: 50%;
+    left: 60%;
+    transform: translate(20%, 0);
+    background: url("../img/computer.svg") no-repeat center center/contain;
+    z-index: -1;
+}
+
+#example .wrap .content .bottom h3{
+    font-size: 3rem;
+    color: #03CDD5;
+}
+
+#example .wrap .content .bottom p{
+    font-size: 1.8rem;
+}
+
 /* achievement */
 #achievement{
     padding: 5.5rem 0 6rem;
@@ -905,6 +1003,65 @@
     #example .wrap > img{
         width: 100%;
         margin-bottom: 2.1rem;
+    }
+
+    #example .wrap .content .top{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #example .wrap .content .top > div{
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    #example .wrap .content .top h3{
+        font-size: 2.6rem;
+        margin-bottom: .2rem;
+    }
+
+    #example .wrap .content .top img{
+        width: 13.203rem;
+    }
+
+    #example .wrap .content .top ul li{
+        font-size: 1.4rem;
+    }
+
+    #example .wrap .content .top ul p{
+        font-size: 1.4rem;
+    }
+
+    #example .wrap .content .bottom{
+        width: 100%;
+        flex-direction: column;
+        padding: 1.7rem 0 4rem;
+    }
+
+    #example .wrap .content .bottom::before{
+        width: 2.774rem;
+        height: 4.439rem;
+        top: 50%;
+        left: 5%;
+        transform: translate(100%, -70%);
+    }
+
+    #example .wrap .content .bottom::after{
+        width: 4.689rem;
+        height: 3.126rem;
+        top: 80%;
+        left: 60%;
+        transform: translate(100%, -100%);
+    }
+
+    #example .wrap .content .bottom h3{
+        font-size: 2.6rem;
+    }
+
+    #example .wrap .content .bottom p{
+        font-size: 1.4rem;
+        width: 85%;
     }
 
     /* achievement */
