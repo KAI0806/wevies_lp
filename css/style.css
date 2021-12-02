@@ -634,6 +634,10 @@
     color: #E4E4E4;
 }
 
+#price .table .case ul .bash::before{
+    display: none;
+}
+
 #price .table .campaign{
     padding: 2.5rem 0;
     display: flex;
@@ -1217,6 +1221,23 @@
     #price .select_inner > div > h3{
         font-size: 1.6rem;
         margin-bottom: 2rem;
+    }
+
+    #price .select_inner > div > h3 > span{
+        display: inline-block;
+        position: relative;
+        height: 2.2rem;
+        z-index: 10;
+    }
+
+    #price .select_inner > div > h3 > span::before{
+        position: absolute;
+        content: "";
+        height: .5rem;
+        width: 100%;
+        bottom: 0;
+        background: #FDF369;
+        z-index: -1;
     }
 
     #price .select_inner .page_price{
