@@ -142,6 +142,9 @@ footer{
 
 footer a{
     color: white;
+}
+
+footer .right a{
     font-size: 2rem;
     padding-right: 3rem;
     margin-right: 3rem;
@@ -171,7 +174,7 @@ footer .wrap{
 
 footer .wrap h3{
     font-size: 1.8rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: .3rem;
 }
 
 footer .wrap h2{
