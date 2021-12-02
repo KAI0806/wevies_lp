@@ -634,7 +634,7 @@
     color: #E4E4E4;
 }
 
-#price .table .case ul .bash::before{
+#price .table .case ul .bash::before, #price .select_inner .case ul .bash::before{
     display: none;
 }
 
