@@ -238,6 +238,7 @@ footer .wrap p{
 
     .cta{
         flex-direction: column;
+        width: 113%;
     }
 
 
@@ -248,7 +249,9 @@ footer .wrap p{
 
     .cta a{
         font-size: 2rem;
-        padding: 1.5rem 5.27rem;
+        padding: 1.5rem 0;
+        width: 100%;
+        text-align: center;
     }
 
     footer .wrap{
