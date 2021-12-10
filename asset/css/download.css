@@ -145,6 +145,7 @@ input{
 fieldset input{
     width: unset;
     height: unset;
+    transform: translateY(.15rem);
 }
 
 fieldset label{
@@ -275,6 +276,10 @@ textarea{
 
     fieldset label{
         font-size: 1rem;
+    }
+
+    fieldset input{
+        transform: translateY(.3rem);
     }
 
     .form_wrap .flex .left{

@@ -466,7 +466,7 @@
 }
 
 #price > p{
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
     text-align: center;
 }
 
@@ -477,7 +477,7 @@
 #price .attention{
     font-size: 3rem;
     width: unset;
-    margin-bottom: 0;
+    margin: 0;
     font-weight: bold;
     position: relative;
 }

@@ -186,6 +186,12 @@ footer .wrap p{
     color: white;
 }
 
+@media screen and (max-width: 1024px){
+    header .wrap{
+        width: 95%;
+    }
+}
+
 @media screen and (max-width: 767px){
     html{
         font-size: 2.667vw;
