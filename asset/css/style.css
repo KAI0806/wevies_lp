@@ -874,7 +874,8 @@
 
 @media screen and (max-width: 767px){
     #kv{
-        height: 70rem;
+        height: unset;
+        margin-top: 3rem;
     }
 
     #kv .wrap .kv_txt{
@@ -903,7 +904,7 @@
 
     #kv .wrap .kv_txt p{
         font-size: 2rem;
-        margin-top: 32rem;
+        margin-top: 29rem;
         margin-bottom: 2.5rem;
     }
 
@@ -923,11 +924,14 @@
 
     #kv .wrap .kv_txt div{
         flex-direction: column;
+        width: 100%;
     }
 
     #kv .wrap .kv_txt div a{
         font-size: 2rem;
-        padding: 1.5rem 5.27rem;
+        padding: 1.5rem 0;
+        width: 100%;
+        text-align: center;
     }
 
     #kv .wrap .kv_txt div a:nth-child(2){
