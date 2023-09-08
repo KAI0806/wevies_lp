@@ -173,13 +173,15 @@
                                 </div>
                                 <textarea class="right" name="本文" placeholder="良ければ内容を詳しく教えてください"></textarea>
                             </div>
-                        
-                            <!-- ボット投稿をブロックするためのタグ -->
-                            <div class="_formrun_gotcha">
-                                <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
-                                <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-                                <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
-                            </div>
+                        </div>
+
+                        <h3>個人情報の取り扱いについて</h3>
+                        <p style="text-align: left;">当社の<a href="https://reglos.net/privacy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>をご確認の上、<br/>同意していただける場合は[同意する]にチェックを入れてください。</p>
+
+                        <div class="check">
+                            <input id="check" type="checkbox" name="個人情報の取扱いに同意する" data-formrun-required>
+                            <label for="check">個人情報の取扱いに同意する <span class="red">[必須]</span></label>
+                            <div data-formrun-show-if-error="個人情報の取扱いに同意する">同意してください</div>
                         </div>
                         <!-- <p>当社の個人情報保護方針に同意の上、<br class="sp_only"/>送信してください。</p> -->
                     
@@ -201,7 +203,7 @@
             </div>
 
             <div class="right">
-                <a href="../privacy_policy.pdf" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+                <a href="https://reglos.net/privacy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
                 <a href="../data_kiyaku.pdf" target="_blank" rel="noopener noreferrer">利用規約</a>
                 <a href="https://reglos.net/" target="_blank" rel="noopener noreferrer">運営会社</a>
             </div>
