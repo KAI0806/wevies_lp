@@ -82,7 +82,7 @@
             
             <h3>メールで相談</h3>
             <!-- class, action, methodを変更しないでください -->
-            <form class="formrun" action="https://form.run/api/v1/r/nayx2lw2u5z2w8d8cdvomm4b" method="post">
+            <form class="formrun" action="https://hyperform.jp/api/mhb9UEy9" method="post">
                 <!-- ↓自由に要素を追加・編集することができます -->
                 <fieldset class="flex">
                     <span class="left">ご希望プラン
@@ -109,9 +109,9 @@
 
                 <div class="flex" style="border-bottom: .1rem solid #707070;">
                     <div class="left big">
-                        <label class=>本文</label>
+                        <label for="description" class=>本文</label>
                     </div>
-                    <textarea class="right" name="本文" placeholder="見積もりが欲しい。"></textarea>
+                    <textarea for="description" class="right" name="本文" placeholder="見積もりが欲しい。"></textarea>
                 </div>
 
                 <h3>お客様基本情報</h3>
@@ -132,26 +132,26 @@
                 </div>
 
                 <div class="flex">
-                    <label class="left">会社名
+                    <label id="company" class="left">会社名
                         <br/><span class="red">[必須]</span>
                     </label>
-                    <input class="right" name="会社名" type="text" placeholder="例)株式会社リグロス" data-formrun-required>
+                    <input id="company" class="right" name="会社名" type="text" placeholder="例)株式会社リグロス" data-formrun-required>
                     <div data-formrun-show-if-error="会社名">会社名を入力してください</div>
                 </div>
 
                 <div class="flex">
-                    <label class="left">電話番号
+                    <label for="tel" class="left">電話番号
                         <br/><span class="red">[必須]</span>
                     </label>
-                    <input class="right" type="text" name="電話番号" data-formrun-type="tel" placeholder="例)03-5244-9545" data-formrun-required>
+                    <input id="tel" class="right" type="tel" name="電話番号" data-formrun-type="tel" placeholder="例)03-5244-9545" data-formrun-required>
                     <div data-formrun-show-if-error="電話番号">電話番号を入力してください</div>
                 </div>
             
                 <div class="flex" style="border-bottom: .1rem solid #707070;">
-                    <label class="left">メール<br class="sp_only"/>アドレス
+                    <label for="email" class="left">メール<br class="sp_only"/>アドレス
                         <br/><span class="red">[必須]</span></label>
-                    <input class="right" name="メールアドレス" type="text" data-formrun-type="email" placeholder="例)info@reglos.co.jp" data-formrun-required>
-                    <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                    <input id="email" class="right" name="email" type="text" data-formrun-type="email" placeholder="例)info@reglos.co.jp" data-formrun-required>
+                    <div data-formrun-show-if-error="email">メールアドレスを正しく入力してください</div>
                 </div>
 
                 <h3>個人情報の取り扱いについて</h3>
@@ -161,13 +161,6 @@
                     <input type="checkbox" name="個人情報の取扱いに同意する" data-formrun-required>
                     <label>個人情報の取扱いに同意する <span class="red">[必須]</span></label>
                     <div data-formrun-show-if-error="個人情報の取扱いに同意する">同意してください</div>
-                </div>
-            
-                <!-- ボット投稿をブロックするためのタグ -->
-                <div class="_formrun_gotcha">
-                    <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
-                    <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-                    <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
                 </div>
             
                 <div class="btn_wrap">

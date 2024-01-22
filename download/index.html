@@ -103,7 +103,7 @@
                 <div class="right">
 
                     <!-- class, action, methodを変更しないでください -->
-                    <form class="formrun" action="https://form.run/api/v1/r/d3jn65ms57quff9efhmojx7d" method="post">
+                    <form class="formrun" action="https://hyperform.jp/api/a8xz1aL1" method="post">
                         <!-- ↓自由に要素を追加・編集することができます -->
                         <div class="form_wrap">
                             <div class="flex">
@@ -123,26 +123,26 @@
                             </div>
             
                             <div class="flex">
-                                <label class="left">会社名
+                                <label for="company" class="left">会社名
                                     <br/><span class="red">[必須]</span>
                                 </label>
-                                <input class="right" name="会社名" type="text" placeholder="例)株式会社リグロス" data-formrun-required>
+                                <input id="company" class="right" name="会社名" type="text" placeholder="例)株式会社リグロス" data-formrun-required>
                                 <div data-formrun-show-if-error="会社名">会社名を入力してください</div>
                             </div>
                         
                             <div class="flex">
-                                <label class="left">電話番号
+                                <label for="postnum" class="left">電話番号
                                     <br/><span class="red">[必須]</span>
                                 </label>
-                                <input class="right" type="text" name="電話番号" data-formrun-type="tel" placeholder="例)03-5244-9545" data-formrun-required>
+                                <input id="postnum" class="right" type="tel" name="電話番号" data-formrun-type="tel" placeholder="例)03-5244-9545" data-formrun-required>
                                 <div data-formrun-show-if-error="電話番号">電話番号を入力してください</div>
                             </div>
                         
                             <div class="flex">
-                                <label class="left">メールアドレス
+                                <label for="email" class="left">メールアドレス
                                     <br/><span class="red">[必須]</span></label>
-                                <input class="right" name="メールアドレス" type="text" data-formrun-type="email" placeholder="例)info@reglos.co.jp" data-formrun-required>
-                                <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                                <input id="email" class="right" name="email" type="email" data-formrun-type="email" placeholder="例)info@reglos.co.jp" data-formrun-required>
+                                <div data-formrun-show-if-error="email">メールアドレスを正しく入力してください</div>
                             </div>
 
                             <fieldset class="flex">
@@ -169,9 +169,9 @@
                         
                             <div class="flex final">
                                 <div class="left big">
-                                    <label class=>本文</label>
+                                    <label for="description" class=>本文</label>
                                 </div>
-                                <textarea class="right" name="本文" placeholder="良ければ内容を詳しく教えてください"></textarea>
+                                <textarea id="description" class="right" name="本文" placeholder="良ければ内容を詳しく教えてください"></textarea>
                             </div>
                         </div>
 
